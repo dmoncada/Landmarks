@@ -13,6 +13,10 @@
 		DC19AC0F267436D700DAB68A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19ABFA267436D600DAB68A /* ContentView.swift */; };
 		DC19AC10267436D700DAB68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC19ABFB267436D700DAB68A /* Assets.xcassets */; };
 		DC19AC11267436D700DAB68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC19ABFB267436D700DAB68A /* Assets.xcassets */; };
+		DC19AC1B26743B8900DAB68A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19AC1A26743B8900DAB68A /* CircleImage.swift */; };
+		DC19AC1C26743B8900DAB68A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19AC1A26743B8900DAB68A /* CircleImage.swift */; };
+		DC19AC1E26743C8500DAB68A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19AC1D26743C8500DAB68A /* MapView.swift */; };
+		DC19AC1F26743C8500DAB68A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19AC1D26743C8500DAB68A /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		DC19AC08267436D700DAB68A /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC19AC0A267436D700DAB68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC19AC0B267436D700DAB68A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DC19AC1A26743B8900DAB68A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		DC19AC1D26743C8500DAB68A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			children = (
 				DC19ABF9267436D600DAB68A /* LandmarksApp.swift */,
 				DC19ABFA267436D600DAB68A /* ContentView.swift */,
+				DC19AC1A26743B8900DAB68A /* CircleImage.swift */,
+				DC19AC1D26743C8500DAB68A /* MapView.swift */,
 				DC19ABFB267436D700DAB68A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -188,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC19AC0E267436D700DAB68A /* ContentView.swift in Sources */,
+				DC19AC1E26743C8500DAB68A /* MapView.swift in Sources */,
 				DC19AC0C267436D700DAB68A /* LandmarksApp.swift in Sources */,
+				DC19AC1B26743B8900DAB68A /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC19AC0F267436D700DAB68A /* ContentView.swift in Sources */,
+				DC19AC1F26743C8500DAB68A /* MapView.swift in Sources */,
 				DC19AC0D267436D700DAB68A /* LandmarksApp.swift in Sources */,
+				DC19AC1C26743B8900DAB68A /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
