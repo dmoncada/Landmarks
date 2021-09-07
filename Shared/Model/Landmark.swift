@@ -11,15 +11,19 @@ struct Landmark: Hashable, Codable, Identifiable {
 
     private var imageName: String
     var image: Image {
-        Image(imageName)
+        get {
+            Image(imageName)
+        }
     }
 
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude
-        )
+        get {
+            CLLocationCoordinate2D(
+                latitude: coordinates.latitude,
+                longitude: coordinates.longitude
+            )
+        }
     }
 
     struct Coordinates: Hashable, Codable {

@@ -4,8 +4,9 @@ struct LandmarkRow: View {
     var landmark: Landmark
 
     var body: some View {
-        HStack {
-            landmark.image
+        HStack() {
+            landmark
+                .image
                 .resizable()
                 .frame(width: 50, height: 50)
 

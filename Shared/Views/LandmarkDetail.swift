@@ -4,7 +4,7 @@ struct LandmarkDetail: View {
     var landmark: Landmark
 
     var body: some View {
-        ScrollView {
+        ScrollView() {
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
@@ -17,7 +17,7 @@ struct LandmarkDetail: View {
                 Text(landmark.name)
                     .font(.title)
 
-                HStack {
+                HStack() {
                     Text(landmark.park)
                     Spacer()
                     Text(landmark.state)
