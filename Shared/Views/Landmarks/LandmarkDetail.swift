@@ -46,9 +46,9 @@ struct LandmarkDetail: View {
       .padding()
     }
     .navigationTitle(landmark.name)
-#if os(iOS)
+    #if os(iOS)
     .navigationBarTitleDisplayMode(.inline)
-#endif
+    #endif
   }
 }
 

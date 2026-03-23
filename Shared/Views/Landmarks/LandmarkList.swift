@@ -9,7 +9,7 @@ struct LandmarkList: View {
 
   private var filteredLandmarks: [Landmark] {
     return showFavoritesOnly
-      ? modelData.landmarks.filter { landmark in landmark.isFavorite }
+      ? modelData.landmarks.filter(\.isFavorite)
       : modelData.landmarks
   }
 
