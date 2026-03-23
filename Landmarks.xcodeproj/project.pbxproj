@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,12 @@
 		DC006A072F71D12400A1E3DA /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0069FE2F71D12400A1E3DA /* HikeView.swift */; };
 		DC006A092F71D1C800A1E3DA /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC006A082F71D1C800A1E3DA /* hikeData.json */; };
 		DC006A0A2F71D1C800A1E3DA /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC006A082F71D1C800A1E3DA /* hikeData.json */; };
+		DC006A0D2F71D31500A1E3DA /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC006A0C2F71D31400A1E3DA /* CategoryHome.swift */; };
+		DC006A0E2F71D31500A1E3DA /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC006A0C2F71D31400A1E3DA /* CategoryHome.swift */; };
+		DC006A102F71D76700A1E3DA /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC006A0F2F71D76700A1E3DA /* CategoryRow.swift */; };
+		DC006A112F71D76700A1E3DA /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC006A0F2F71D76700A1E3DA /* CategoryRow.swift */; };
+		DC006A132F71D8D400A1E3DA /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC006A122F71D8D100A1E3DA /* CategoryItem.swift */; };
+		DC006A142F71D8D400A1E3DA /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC006A122F71D8D100A1E3DA /* CategoryItem.swift */; };
 		DC19AC0C267436D700DAB68A /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19ABF9267436D600DAB68A /* LandmarksApp.swift */; };
 		DC19AC0D267436D700DAB68A /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19ABF9267436D600DAB68A /* LandmarksApp.swift */; };
 		DC19AC0E267436D700DAB68A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19ABFA267436D600DAB68A /* ContentView.swift */; };
@@ -62,6 +68,9 @@
 		DC0069FD2F71D12400A1E3DA /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		DC0069FE2F71D12400A1E3DA /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		DC006A082F71D1C800A1E3DA /* hikeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
+		DC006A0C2F71D31400A1E3DA /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		DC006A0F2F71D76700A1E3DA /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		DC006A122F71D8D100A1E3DA /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		DC19ABF9267436D600DAB68A /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		DC19ABFA267436D600DAB68A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC19ABFB267436D700DAB68A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +124,16 @@
 			path = Hikes;
 			sourceTree = "<group>";
 		};
+		DC006A0B2F71D2D000A1E3DA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DC006A122F71D8D100A1E3DA /* CategoryItem.swift */,
+				DC006A0F2F71D76700A1E3DA /* CategoryRow.swift */,
+				DC006A0C2F71D31400A1E3DA /* CategoryHome.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		DC19ABF3267436D600DAB68A = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,7 @@
 		DC19AC29267445CA00DAB68A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC006A0B2F71D2D000A1E3DA /* Categories */,
 				DC19ABFA267436D600DAB68A /* ContentView.swift */,
 				DC3882322708228D00151BE8 /* Badges */,
 				DCEED60526E708BB0011A804 /* Helpers */,
@@ -269,8 +289,9 @@
 		DC19ABF4267436D600DAB68A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					DC19ABFF267436D700DAB68A = {
 						CreatedOnToolsVersion = 12.5;
@@ -327,13 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC006A112F71D76700A1E3DA /* CategoryRow.swift in Sources */,
 				DC19AC0E267436D700DAB68A /* ContentView.swift in Sources */,
+				DC006A0E2F71D31500A1E3DA /* CategoryHome.swift in Sources */,
 				DC3882302708217300151BE8 /* Badge.swift in Sources */,
 				DC19AC1E26743C8500DAB68A /* MapView.swift in Sources */,
 				DC19AC0C267436D700DAB68A /* LandmarksApp.swift in Sources */,
 				DCEED60226E708230011A804 /* FavoriteButton.swift in Sources */,
 				DC38822427081A0100151BE8 /* HexagonParameters.swift in Sources */,
 				DC0069FA2F71D11400A1E3DA /* Hike.swift in Sources */,
+				DC006A132F71D8D400A1E3DA /* CategoryItem.swift in Sources */,
 				DC38822D2708211A00151BE8 /* RotatedBadgeSymbol.swift in Sources */,
 				DC38822A27081F3600151BE8 /* BadgeSymbol.swift in Sources */,
 				DC19AC302674478D00DAB68A /* LandmarkList.swift in Sources */,
@@ -354,13 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC006A102F71D76700A1E3DA /* CategoryRow.swift in Sources */,
 				DC19AC0F267436D700DAB68A /* ContentView.swift in Sources */,
+				DC006A0D2F71D31500A1E3DA /* CategoryHome.swift in Sources */,
 				DC3882312708217300151BE8 /* Badge.swift in Sources */,
 				DC19AC1F26743C8500DAB68A /* MapView.swift in Sources */,
 				DC19AC0D267436D700DAB68A /* LandmarksApp.swift in Sources */,
 				DCEED60326E708230011A804 /* FavoriteButton.swift in Sources */,
 				DC38822527081A0100151BE8 /* HexagonParameters.swift in Sources */,
 				DC0069F92F71D11400A1E3DA /* Hike.swift in Sources */,
+				DC006A142F71D8D400A1E3DA /* CategoryItem.swift in Sources */,
 				DC38822E2708211A00151BE8 /* RotatedBadgeSymbol.swift in Sources */,
 				DC38822B27081F3600151BE8 /* BadgeSymbol.swift in Sources */,
 				DC19AC312674478D00DAB68A /* LandmarkList.swift in Sources */,
@@ -414,9 +441,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,6 +463,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -473,9 +503,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -486,6 +518,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -497,7 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E76XSQA67L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -519,7 +552,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E76XSQA67L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -544,8 +577,11 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = E76XSQA67L;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,8 +603,11 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = E76XSQA67L;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
